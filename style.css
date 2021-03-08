@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+header {
+    margin: 20px 50px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_left {
+    width: 40%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.logo {
+    display: inline-block;
+    width: 20%;
+}
+.logo img {
+    width: 100%;
+}
+
+.nav_left {
+    margin-left: 20px;
+    display: inline-block;
+}
+.nav_left ul li {
+    list-style: none;
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline-block;
+    color: grey;
+}
+.nav_left ul li:first-child {
+    color: black;
+}
+
+.header_right {
+    width: 40%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav_right {
+    display: inline-block;
+}
+
+.nav_right ul li {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    color: grey;
+    margin: 0 5px;
+}
+
+.nav_right ul li .menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px lightgrey;
+}
+
+.nav_right ul li .menu ul li {
+    display: block;
+}
+
+.nav_right ul li .menu.active {
+    display: block;
+}
+
+.buttons {
+    display: inline-block;
+}
+
+.buttons select {
+    border: none;
+    margin: 0 5px;
+}
+
+.buttons button {
+    background-color: rgb(255, 51, 136);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 150px;
+}
+
+#new {
+    display: inline-block;
+    font-size: 15px;
+    color:rgb(255, 51, 136);
+}
